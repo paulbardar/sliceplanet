@@ -1,0 +1,255 @@
+/* reset */
+/* main variables */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: #FFF;
+  height: 100%;
+  line-height: 1;
+  position: relative;
+  font-size: 14px !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*MAIN*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-width: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+input,
+textarea {
+  color: #333;
+  font-family: "PT Sans", Arial, sans-serif;
+  outline: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+td {
+  margin: 0px;
+  padding: 0px;
+}
+
+form {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: #171717;
+  transition: all 0.2s linear;
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  color: #cb944c;
+}
+
+a,
+span,
+div,
+button {
+  outline: none !important;
+}
+
+input[type=submit],
+input[type=button],
+button {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after,
+.wrapper:after,
+.row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Open Sans Light.eot");
+  src: url("../fonts/Open Sans Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans Light.woff") format("woff"), url("../fonts/Open Sans Light.ttf") format("truetype"), url("../fonts/Open Sans Light.svg#Open Sans Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Open Sans Bold.eot");
+  src: url("../fonts/Open Sans Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans Bold.woff") format("woff"), url("../fonts/Open Sans Bold.ttf") format("truetype"), url("../fonts/Open Sans Bold.svg#Open Sans Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Open Sans.eot");
+  src: url("../fonts/Open Sans.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans.woff") format("woff"), url("../fonts/Open Sans.ttf") format("truetype"), url("../fonts/Open Sans.svg#Open Sans") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSansRegular.eot");
+  src: url("../fonts/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PTSansItalic";
+  src: url("../fonts/PTSansItalic.eot");
+  src: url("../fonts/PTSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansItalic.woff") format("woff"), url("../fonts/PTSansItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url("../fonts/PTSansBold.eot");
+  src: url("../fonts/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold.ttf") format("truetype");
+  font-weight: normal;
+  font-weight: normal;
+}
+
+/* example mixins */
+.border-radius {
+  border-radius: 10px;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.scale {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.shadow {
+  -ms-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 0;
+  padding: 10px 25px 0 25px;
+  background: #000;
+  border: 1px solid #f0f0f0;
+  font-size: 16px;
+  line-height: 19px;
+  height: 40px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.font {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+
+.center_transform {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.verrical_center_transform {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+}
+
+.gradient {
+  background: linear-gradient(to right, black 0%, white 100%);
+}
+
+/* example mixins */
+
+/*# sourceMappingURL=_mixin_example.css.map */
