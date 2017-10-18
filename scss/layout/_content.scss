@@ -224,6 +224,7 @@ h3 {
   .slide {
     &__title {
       left: 33px;
+      z-index: 10;
       max-width: 290px;
       padding: 8px 15px 9px 15px;
       font-size: 22.86px;
@@ -247,9 +248,19 @@ h3 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+	.slider__item {
+  	height: 165px;
+  	img {
+  		position: absolute;
+  		bottom: 0;
+  	}
+  }
+
 }
 
 @media screen and (max-width: 767px) {
+
+
   .slider-arrow {
     top: 50%;
   }
